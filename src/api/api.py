@@ -9,5 +9,8 @@ def api_hash():
 # hash for string
     return jsonify({'hash': hash('thedarkdog.attlasian.net')})
 
+@app.route('/')
+def hello_world():
+    return 'My app in Docker'
 
 app.run()
